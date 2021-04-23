@@ -94,6 +94,7 @@
               "src/assets"
             ],
             "styles": [
+              "../node_modules/@fortawesome/fontawesome-free/css/fontawesome.css",
               "src/styles.css"
             ],
             "scripts": []
