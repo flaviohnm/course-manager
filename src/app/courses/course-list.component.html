@@ -2,7 +2,6 @@
 
 <div class="form-group row">
   <label class="col-sm-2 col-form-label">Filter By</label>
-
   <div class="col-sm-10"></div>
   <input [(ngModel)]="filter" class="form-control">
 </div>
@@ -29,7 +28,10 @@
       <td>
         <app-star [rating]="course.rating"></app-star>
       </td>
-      <td></td>
+      <td>
+          <a [routerLink] = "['/courses/info', course.id]" class = "btn btn-primary mr-2">Edit</a>
+          <button (click)="deleteById(course.id)" class="btn btn-danger">Delete</button>
+      </td>
     </tr>
   </tbody>
 </table>
